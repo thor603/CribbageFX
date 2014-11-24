@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" type="GridPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="490.0" minWidth="10.0" prefWidth="114.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="489.0" minWidth="10.0" prefWidth="302.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="350.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <HBox fx:id="computerCardsHBox" prefHeight="100.0" prefWidth="300.0" spacing="3.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <children>
+            <ImageView fx:id="computerCard1" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="computerCard2" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="computerCard3" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="computerCard4" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="computerCard5" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="computerCard6" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+         </children>
+      </HBox>
+      <HBox GridPane.columnSpan="2" GridPane.rowIndex="4">
+         <children>
+            <Label text="Player Score:" GridPane.rowIndex="4">
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="playerScoreLabel" text="0" />
+         </children>
+      </HBox>
+      <Label text="Crib:" GridPane.columnIndex="2" />
+      <HBox GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Label text="Pegging Score:">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="peggingScoreLabel" text="0" />
+         </children>
+      </HBox>
+      <HBox fx:id="cribCardsHBox" prefHeight="100.0" prefWidth="200.0" spacing="3.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <ImageView fx:id="cribCard1" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="cribCard2" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="cribCard3" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="cribCard4" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+         </children>
+      </HBox>
+      <HBox fx:id="playerCardsHBox" prefHeight="100.0" prefWidth="200.0" spacing="3.0" GridPane.columnSpan="2" GridPane.rowIndex="5">
+         <children>
+            <ImageView fx:id="playerCard1" fitHeight="116.0" fitWidth="80.0" onMouseClicked="#playerCard1Clicked" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="playerCard2" fitHeight="116.0" fitWidth="80.0" onMouseClicked="#playerCard2Clicked" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="playerCard3" fitHeight="116.0" fitWidth="80.0" onMouseClicked="#playerCard3Clicked" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="playerCard4" fitHeight="116.0" fitWidth="80.0" onMouseClicked="#playerCard4Clicked" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="playerCard5" fitHeight="116.0" fitWidth="80.0" onMouseClicked="#playerCard5Clicked" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+            <ImageView fx:id="playerCard6" fitHeight="116.0" fitWidth="80.0" onMouseClicked="#playerCard6Clicked" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></ImageView>
+         </children>
+      </HBox>
+      <HBox GridPane.columnSpan="2">
+         <children>
+            <Label text="Computer Score:">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin></Label>
+            <Label fx:id="computerScoreLabel" text="0" />
+         </children>
+      </HBox>
+      <ImageView fx:id="cutCard" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+      <HBox fx:id="peggingCardsHBox" prefHeight="100.0" prefWidth="200.0" spacing="3.0" style="-fx-border-color: transparent transparent transparent white;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+         <children>
+            <ImageView fx:id="peggingCard1" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="peggingCard2" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="peggingCard3" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="peggingCard4" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="peggingCard5" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="peggingCard6" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="peggingCard7" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="peggingCard8" fitHeight="116.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Button fx:id="nextRoundButton" disable="true" mnemonicParsing="false" onAction="#nextRoundButtonClicked" text="Next Round" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Label alignment="TOP_LEFT" contentDisplay="CENTER" text="Cut Card:" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+   </children>
+</fx:root>
