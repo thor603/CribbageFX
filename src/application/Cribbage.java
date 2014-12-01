@@ -7,6 +7,7 @@ import application.UserInput.InputType;
  * Class controls the overall state and logic of the game.
  * 
  */
+
 public final class Cribbage {
 	
 	//number of points to win game

@@ -18,7 +18,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 
 /**
- * This class class controls and handles updates from the user interface
+ * Class updates, controls and handles input from the user interface
  * 
  */
 

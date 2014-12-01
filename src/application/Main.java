@@ -4,6 +4,10 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * Main class to launch application.
+ *
+ */
 
 public class Main extends Application {
 	

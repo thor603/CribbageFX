@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * Class represents pegging cards.
+ *
+ */
+
 public class PeggingCards {
 	
 	public final static int MAX_PEG_VALUE = 31;

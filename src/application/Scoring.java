@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-
 /**
  * Class includes static methods for scoring.
  *
@@ -430,7 +429,7 @@ public final class Scoring {
 	
 
 	/**
-	 * For testing purposes only.
+	 * For testing purposes
 	 */
 //	public static void main(String[] args) {
 //		List<Card> cards = new ArrayList<Card>();
